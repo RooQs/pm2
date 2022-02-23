@@ -1,0 +1,2 @@
+- name: Customizable Docker Buildx
+  uses: ilteoood/docker_buildx@1.0.5
