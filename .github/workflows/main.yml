@@ -14,6 +14,7 @@ jobs:
               with:
                 publish: true
                 platform: linux/amd64,linux/arm64
-                imageName: ${{ secrets.DOCKER_HUB_USER_NAME }}
+                tag: ${{ GITHUB_REF_NAME }}
+                imageName: ${{ secrets.DOCKER_IMAGE_NAME }}
                 dockerUser: ${{ secrets.DOCKER_HUB_USER_NAME }}
                 dockerPassword: ${{ secrets.DOCKER_HUB_USER_PASSWORD }}
