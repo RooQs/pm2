@@ -4,8 +4,8 @@ LABEL maintainer="RooQs <rooqs.main@qq.com>"
 # setting timezone
 RUN apk add tzdata
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-#RUN echo "Asia/Shanghai" >  /etc/timezone
-#RUN apk del tzdata
+RUN echo "Asia/Shanghai" >  /etc/timezone
+RUN apk del tzdata
 
 # Install pm2
 RUN npm install pm2 -g
