@@ -10,6 +10,9 @@ RUN apk del tzdata
 # Install pm2
 RUN npm install pm2 -g
 
+# Install pm2-logrotate
+RUN pm2 install pm2-logrotate
+
 # Expose ports needed to use Keymetrics.io
 EXPOSE 80 443 43554
 
